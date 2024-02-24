@@ -40,7 +40,8 @@ void merge(size_t start, size_t middle, size_t end, int *dest, int *source)
 }
 
 /**
- * split_merge_recursive - recursively splits the array and merges the sorted arrays
+ * split_merge_recursive - recursively splits the array
+ * and merges the sorted arrays
  * @start: starting index (inclusive)
  * @end: end index (exclusive)
  * @array: the array to sort
