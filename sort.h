@@ -46,5 +46,9 @@ void bitonic_sort(int *array, size_t size);
 void bitonic_seq(int *array, size_t size, size_t start, size_t seq, char flow);
 void bitonic_merge(int *arr, size_t size, size_t start, size_t seq, char flow);
 void swap_integers(int *a, int *b);
+void quick_sort_hoare(int *array, size_t size);
+int hoare_partition(int *array, size_t size, int left, int right);
+void swap_integers2(int *a, int *b);
+void hoare_sort(int *array, size_t size, int left, int right);
 
 #endif /* SORT_H */
