@@ -7,8 +7,8 @@
 #include <time.h>
 #include <stddef.h>
 
-#define UP 1
-#define DOWN 0
+#define UP 0
+#define DOWN 1
 
 /**
  * struct listint_s - Doubly linked list node
@@ -37,7 +37,7 @@ void cocktail_sort_list(listint_t **list);
 void swap_nodes(listint_t **list, listint_t *node);
 void counting_sort(int *array, size_t size);
 void merge_sort(int *array, size_t size);
-void merge_sort_recursive(int *array, int *temp, int low, int high);
-void merge(int *array, int *temp, int low, int mid, int high);
+void split_merge_recursive(size_t start, size_t end, int *array, int *copy);
+void merge(size_t start, size_t middle, size_t end, int *dest, int *source);
 
 #endif /* SORT_H */
