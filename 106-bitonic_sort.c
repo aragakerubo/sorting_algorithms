@@ -26,8 +26,8 @@ void swap_integers(int *a, int *b)
  *
  * Return: Void
  */
-void bitonic_merge(int *array, size_t size, size_t start, size_t seq,
-		   char flow)
+void bitonic_merge(
+    int *array, size_t size, size_t start, size_t seq, char flow)
 {
 	size_t i, jump = seq / 2;
 
